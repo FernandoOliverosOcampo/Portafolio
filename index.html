@@ -8,7 +8,8 @@
     portafolio de un sin numeros de trabajos realizados">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link Swiper's CSS -->
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="./imagenes/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
@@ -19,10 +20,85 @@
 
     <header>
 
+        <div class="container-fluid">
+
+            <div class="navb-logo">
+                <img src="./imagenes/ico.png" alt="Logo">
+            </div>
+
+            <div class="navb-items d-none d-xl-flex">
+
+                <div class="item">
+                    <a href="#quiensoy">¿Quien soy?</a>
+                </div>
+
+                <div class="item">
+                    <a href="#portafolio">Portafolio</a>
+                </div>
+
+                <div class="item">
+                    <a href="#habilidades">Habilidades</a>
+                </div>
+
+                <div class="item">
+                    <a href="#contactame">Contáctame</a>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="mobile-toggler d-lg-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <img src="/imagenes/ico.png" alt="Logo">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+
+                        <div class="modal-body">
+                            
+                            <div class="modal-line">
+                                <i class="fa-sharp fa-solid fa-user"></i></i><a href="/quiensoy">¿Quien soy?</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-sharp fa-solid fa-folder-open"></i></i><a href="/#portafolio">Portafolio</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-sharp fa-solid fa-sliders"></i> <a href="/habilidades">Habilidades</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-sharp fa-solid fa-phone"></i><a href="/contactame">Contáctame</a>
+                            </div>
+
+                        </div>
+
+                        <div class="mobile-modal-footer">
+                            
+                            <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </header>
     <div class="estructuraPagina">
         <section>
-            <div class="contenido-derecha">
+            <div class="contenido-derecha" id="quiensoy">
                 <div class="contenido">
                     <div class="concepto">
                         <h2><b>¿Quien soy?</b></h2>
@@ -39,19 +115,19 @@
     
                     </div>
                     <div class="imagen">
-                        <img src="./imagenes/fercho.jpg" alt="Imagen">
+                        <img src="./imagenes/imagen.jpeg" alt="Imagen">
                     </div>
                     
                 </div>
     
             </div>
         </section>
-        <section class="Titulo-portafolio">
+        <section class="Titulo-portafolio" id="portafolio">
             <div class="Titulo">
                 <h2>Portafolio</h2>
             </div>
         </section>
-        <section class="container-lugares-slider">
+        <section class="container-lugares-slider" >
                   
         <div class="container-lugares">
 
@@ -398,7 +474,7 @@
 
     <!-- footer -->
     <footer>
-        <div class="footer-container" id="contactanos">
+        <div class="footer-container" id="contactame">
             <div class="footer-logo">
                 <h2>Fernando Oliveros Ocampo</h2>
                 <p>Si puedes imaginarlo, puedes programarlo</p>
@@ -433,7 +509,7 @@
                 </div>
             </div>
             <div class="footer-contactus">
-                <h2>Contáctame</h2>
+                <h2>Contáctanos</h2>
                 <a href="https://wa.me/573058290062" target="_blank">
                     <button>Enviar mensaje</button>
                 </a>
@@ -464,6 +540,8 @@
     
     <!-- scripts -->
     <!-- Swiper JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="module" src="./js/index.js"></script>
