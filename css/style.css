@@ -116,7 +116,29 @@ header .mobile-toggler{
     margin: 0;
     width: 430px;
 }
+/*BANNER*/
+.banner-container{
+position: relative;
+background-size: cover;
+width: 100%;
+height: 90vh;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(320, 20%, 97%, 0.781), hsla(317, 45%, 52%, 0.664)), url(../imagenes/portada.webp);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(320, 20%, 97%, 0.781), hsla(320, 20%, 97%, 0.781)), url(../imagenes/portada.webp);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-attachment: fixed;
+/*background-color: #ff0000;*/
+background-repeat: no-repeat;
 
+}
+
+#text{
+
+font-size: 60px;
+color:black;
+text-transform: uppercase;
+}
 
 
 /*CONTENIDO PAGINA*/
@@ -212,6 +234,7 @@ header .mobile-toggler{
 
 .chat-box-header h5 {
     margin: 0;
+    font-size: 1vw;
 }
 
 #chat-box-toggle {
@@ -219,7 +242,7 @@ header .mobile-toggler{
 }
 
 .chat-box-body {
-    padding: 10px;
+    padding: 15px;
 }
 
 .mensaje {
@@ -227,7 +250,7 @@ header .mobile-toggler{
 }
 
 .btn {
-    padding: 5px 8px;
+    padding: 0 8px;
     border-radius: 4px;
     text-decoration: none;
     color: #fff;
@@ -238,8 +261,10 @@ header .mobile-toggler{
 
 .btn-whatsapp {
     background-color: #25d366;
-    height: 4vh;
-    width: 10vw;
+    height: 6vh;
+    width: 12vw;
+    text-align: start;
+    
 }
 
 .btn-whatsapp:hover {
@@ -427,8 +452,6 @@ header .mobile-toggler{
     font-size: 1vw;
 }
 
-
-
 /* FOOTER */
 .footer-container {
     background-color: #d1d1d18c;
@@ -523,6 +546,12 @@ header .mobile-toggler{
 }
 
 @media(max-width: 768px) {
+    /*Banner*/
+    #text{
+        font-size: 50px;
+        text-align: center;
+        }
+
     /*CONTENIDO DERECHA*/
 
     .contenido-derecha {
@@ -696,7 +725,15 @@ header .mobile-toggler{
  }
  #chat-box-toggle{
     font-size: 3vw;
+    
  }
+ .btn-whatsapp {
+    background-color: #25d366;
+    height: 5vh;
+    width: 30vw;
+    text-align: start;
+    
+}
 /*Modal*/
 .modal-dialog{
 
