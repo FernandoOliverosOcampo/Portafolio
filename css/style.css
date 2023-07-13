@@ -133,8 +133,10 @@ background-repeat: no-repeat;
 
 }
 
-#text{
 
+#text{
+text-align: center;
+width: 100vw;
 font-size: 60px;
 color:black;
 text-transform: uppercase;
@@ -548,7 +550,7 @@ text-transform: uppercase;
 @media(max-width: 768px) {
     /*Banner*/
     #text{
-        font-size: 35px;
+        font-size: 40px;
         text-align: center;
         }
 
