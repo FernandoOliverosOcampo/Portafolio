@@ -548,7 +548,7 @@ text-transform: uppercase;
 @media(max-width: 768px) {
     /*Banner*/
     #text{
-        font-size: 45px;
+        font-size: 35px;
         text-align: center;
         }
 
