@@ -132,8 +132,6 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 
 }
-
-
 #text{
 text-align: center;
 width: 100vw;
@@ -372,7 +370,6 @@ text-transform: uppercase;
         "icono lenguaje"
         "titulo titulo"
         "descripcion descripcion"
-        "comentarios comentarios"
         "boton boton";
     height: 45vh;
     border-radius: 2%;
@@ -391,6 +388,9 @@ text-transform: uppercase;
     grid-area: lenguaje;
     margin-top: 1.5vh;
     text-align: end;
+    text-transform:uppercase;
+    
+    
 }
 
 .tarjeta .tarjeta-titulo {
@@ -401,6 +401,8 @@ text-transform: uppercase;
 .tarjeta .tarjeta-descripcion {
     grid-area: descripcion;
     text-align: start;
+    width: 20vw;
+    
 }
 
 .tarjeta .tarjeta-comentarios {
@@ -421,37 +423,31 @@ text-transform: uppercase;
     width: auto;
 }
 
-.tarjeta-comentarios .tarjeta-comentarios-grilla {
-    display: flex;
-    column-gap: 0.3vw;
-}
-
-.tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta__comentario {
-    font-size: 0.7vw;
-}
-
-.tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta-comentarios-bloque {
-    padding: 0.1vw;
-    border-radius: 10%;
-}
-
 .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje {
     font-size: 0.9vw;
+    padding-right:1.5vw;
 }
 
 .tarjeta .tarjeta-titulo .tarjeta__titulo {
     text-transform: uppercase;
     font-size: 1.2vw;
+    margin-left:5px;
+    margin-right:5px;
+    
 }
 
 .tarjeta .tarjeta-descripcion .tarjeta__descripcion {
     font-size: 0.95vw;
     line-height: 1.5;
+    overflow-wrap: break-word;
+    padding-right:1vw;
 }
 
 .tarjeta .tarjeta-boton a {
     color: #1b62fa;
     font-size: 1vw;
+    margin: 5px;
+    padding: 0.1vw;
 }
 
 /* FOOTER */
@@ -568,7 +564,7 @@ text-transform: uppercase;
         ;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        padding: 10vw;
+        padding: 3vw;
         justify-content: center;
         row-gap: 5vh;
     }
@@ -644,6 +640,7 @@ text-transform: uppercase;
     .tarjeta .tarjeta-descripcion .tarjeta__descripcion {
         font-size: 3vw;
         line-height: 1.5;
+        width: 73vw;
     }
 
     .tarjeta .tarjeta-boton a {
