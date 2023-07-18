@@ -129,7 +129,7 @@ background: linear-gradient(to right, hsla(320, 20%, 97%, 0.781), hsla(320, 20%,
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-attachment: fixed;
 /*background-color: #ff0000;*/
-background-repeat: no-repeat;
+background-repeat: round;
 
 }
 #text{
@@ -545,10 +545,8 @@ text-transform: uppercase;
 
 @media(max-width: 768px) {
     /*Banner*/
-    .banner-container{
+    
 
-    max-width:100%;
-    }
     #text{
         font-size: 40px;
         text-align: center;
